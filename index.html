@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portifólio pessoal da aluna Larissa da Turma 2023.1 do Minas Programam">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
-    <link rel="shortcut icon" href="img/foto-perfil.png">
+    <link rel="shortcut icon" href="./img/My project-2.png">
     <link rel="stylesheet" href="style.css">
 </head>
           
@@ -21,25 +21,31 @@
                 <li>
                     <a href="#competencias">Competencias</a>
                 </li>                
-                <li>Projetos</li>
-                <li>Contato</li>
+                <!--<li> (projetos)
+                    <a href="#projetos">Projetos</a>
+                </li>-->
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>  <!--início e sobre--> 
-            <article>
+        <section class="inicio">  <!--início e sobre--> 
+            <article class="container 
+            subcontainer-inicio">
                 <div> <!--foto de perfil-->
-                    <img src="./img/profile-pic.png" alt="foto do meu perfil, mulher negra de cabelo crespo, com camiseta branca, no fundo laranja">       
+                    <img src="./img/profile-pic.png" alt="foto do meu perfil, mulher negra de cabelo crespo, com camiseta branca, no fundo laranja" height="245" width="245">       
                 </div>
+                <br>
                 <div> <!--titulo e subtitulo-->
-                    <h1><b>Larissa Lopes Oliveira</b></h1>
-                    <h2><i>Desenvolvedora Front-End Jr.</i></h2>   
+                    <h1 class="nome-completo"><b>Larissa Lopes Oliveira</b></h1>
+                    <h2 class="profissao"><i>Desenvolvedora Front-End Jr.</i></h2>   
                 </div>
                 <br>
                 <div> <!--resumo-->
-                    <p>
+                    <p class="texto-sobre">
                         Tenho 19 anos. Sou Técnica em Administração em transição de carreira para área de Tecnologia da Informação. 
                         Estudando a área de Desenolvimento de Software, atualmente o Desenvolvimento Web Front-end 
                         através de cursos livres e pretendo estender para algum curso de nível superior. 
@@ -48,19 +54,21 @@
             </article>
         </section>
         <br>
-        <section> <!--formação-->
-            <article>
+
+        <section id="formacao"> <!--formação-->
+            <article class="container article-formacao">
                 <div> <!--titulo da seção-->
-                    <h2>Formação</h2>
+                    <h2  class="titulo-secao">Formação</h2>
                 </div>
-                <div> <!--conteúdo da seção -->
+
+                <div class="lista-item"> <!--conteúdo da seção -->
                     <ul>
                         <li> <!--curso 1-->
-                            <h3>Curso de programação</h3>
-                            <a href="https://minasprogramam.com/" target="_blank"> Instituto Minas Programam</a>
-                            <p>
-                                Curso introdutório de Desenvolvimento Front-End. Duração de 4 meses. estudos sobre 
-                                lógica de programação e front-end.
+                            <h3 class="lista-titulo">Curso de programação</h3>
+                            <a href="https://minasprogramam.com/" target="_blank" class="lista-link"> Instituto Minas Programam</a>
+                            <p class="formacao-descricao">
+                                Curso introdutório de Desenvolvimento Front-End. Duração de 4 meses. Aulas sobre: Conceitos introdutórios 
+                                do Desenvolvimento Web, HTML, CSS, Lógica de Programação, Metodologias Ageis e Software Livre.
                             </p>
                         </li>
                         <!--<li>    (curso 2)
@@ -75,40 +83,42 @@
             </article>
         </section>
         <br>
-        <section> <!--competências-->
-            <article>
+
+        <section id="competencias" class="competencias"> <!--competências-->
+            <article class="container article-formacao">
                 <div> <!--Titulo da Seção-->
-                    <h2>Competências</h2>
+                    <h2 class="titulo-secao">Competências</h2>
                 </div>
                 <div> <!--foto logo das competências-->
-                    <ul>
-                        <li>
-                            <h3>HTML</h3>
-                            <img src="./img/html-logo-removebg-preview.png" alt="logotipo linguagem de marcação de hipertexto">
+                    <ul class="lista-compt lista-item">
+                        <li class="cardp">
+                            <img src="./img/html-logo-removebg-preview.png" alt="logotipo linguagem de marcação de hipertexto" class="cardp-imagem" >
+                            <h3 class="lista-titulo">HTML</h3>
                         </li>
-                        <li>
-                            <h3>CSS</h3>
-                            <img src="./img/css-logo-removebg-preview.png" alt="logotipo linguagem de estilo CSS">
+                        <li class="cardp">
+                            <img src="./img/css-logo-removebg-preview.png" alt="logotipo linguagem de estilo CSS" class="cardp-imagem" >
+                            <h3 class="lista-titulo">CSS</h3>
                         </li>
-                        <li>
-                            <h3>Javascript</h3>
-                            <img src="./img/js-logo.png" alt="logotipo linguagem de programação javascript">
+                        <li class="cardp">
+                            <img src="./img/js-logo.png" alt="logotipo linguagem de programação javascript" class="cardp-imagem">
+                            <h3 class="lista-titulo">Javascript</h3>
                         </li>
-                        <li>
-                            <h3>Figma</h3>
-                            <img src="./img/figma-logo-removebg-preview.png" alt="logotipo plataforma de design figma">
+                        <li class="cardp">
+                            <img src="./img/figma-logo-removebg-preview.png" alt="logotipo plataforma de design figma" class="cardp-imagem">
+                            <h3 class="lista-titulo" >Figma</h3>
                         </li>
-                        <li>
-                            <h3>Metodologia Scrum</h3>
-                            <img src="./img/scrum-logo-removebg-preview.png" alt="logotipo da metodologia ágil SCRUM">
+                        <li class="cardp">
+                            <img src="./img/scrum-logo-removebg-preview.png" alt="logotipo da metodologia ágil SCRUM" class="cardp-imagem">
+                            <h3 class="lista-titulo">Metodologia Scrum</h3>
                         </li>
                     </ul>
                 </div>
             </article>
         </section>
         <br>
+
         <!--<section> (projetos)
-            <article> 
+            <article class="container"> 
                 <div>
                     <h2>Projetos</h2>
                 </div>
@@ -125,27 +135,31 @@
                 </div>
             </article>
         </section>-->
-    
     </main>
 
-    <footer>
-        <div>
-            <h2>Contato</h2>
-                <ul>
+    <footer id="contato">
+        <div class=" container-rodape footer-ctt">
+            <h2 class="titulo-secao">Contato</h2>
+                <p style="color:antiquewhite"> (textos clickaveis)</p> 
+                <ul class="lista-footer">
                     <li>
-                        <i class="fa-brands fa-square-instagram"></i> <a href="https://www.instagram.com/work.larissa/" target="_blank"> @worklarissa</a> 
+                        <a href="https://www.instagram.com/work.larissa/" target="_blank" class="link-rodape"> @worklarissa</a> 
                     </li>
-                    <br>
+                    
                     <li>
-                        <i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/work-larissa-oliveira" target="_blank"> Meu Linkedin</a>  
+                        <a href="https://www.linkedin.com/in/work-larissa-oliveira" target="_blank" class="link-rodape"> Meu Linkedin</a>  
                     </li>
-                    <br>
+                    
                     <li>
-                        <i class="fa-solid fa-envelope"></i> <a href="#" worklarissaoliveira@gmail.com></a>
+                        <a href="#" worklarissaoliveira@gmail.com></a>
+                    </li> 
+            
+                    <li>
+                        <a href="https://github.com/worklarissa" class="link-rodape"> Meu Github </a>
                     </li>
-                    <br>
+
                     <li>
-                        <i class="fa-brands fa-github"></i> <a href="https://github.com/lari7lo"> Meu Github</a>
+                        <a href=“mailto:worklarissa@gmail.com” class="link-rodape"> Meu email</a>
                     </li>
                 </ul>
         </div>
